@@ -4,7 +4,7 @@ const answer = number1 * number2;
 
 let chance = 0;
 
-document.getElementById("question").innerHTML = number1 + "times" + nuber2;
+alert(number1,"times",number2);
 
 document.getElementById("submitButton").onclick = function(){
     let player = document.getElementById("answerBox").value
