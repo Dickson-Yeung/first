@@ -4,7 +4,7 @@ const answer = number1 * number2;
 
 let chance = 0;
 
-console.log(number1, "times", number2);
+document.getElementById("question").innerHTML = number1 + "times" + nuber2;
 
 document.getElementById("submitButton").onclick = function(){
     let player = document.getElementById("answerBox").value
@@ -13,6 +13,7 @@ document.getElementById("submitButton").onclick = function(){
     if(player == answer){
         if(chance == 1 && player == answer){
             console.log("Great job.That's correct.It took you just 1 times to answer. :) ")
+            document.getElementById("answer").innerHTML = "Great job.That's correct.It took you just 1 times to answer. :)";
         }
         else{
             console.log(answer, "correct.It took you" , chance, "times to answer it.");
