@@ -37,7 +37,7 @@ function update(){
         return;
     }
 
-    context.fillStyle="white";
+    context.fillStyle="black";
     context.fillRect(0, 0, board.width,board.height);
 
     context.fillStyle="red";
