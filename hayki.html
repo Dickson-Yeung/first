@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<h1>Times Table</h1>
+<br>
+<h1 id="demo1">New Question</h1>
+<h1 id="demo2">New Question</h1>
+
+<button id="NQ" onclick="myQuestion()">New Question</button>
+<br>
+<br>
+<input type="number" id="Ans">
+<br>
+<br>
+<button id="subBtn" onclick="myAnswer()">Submit</button>
+<h1 id="Q1">Result</h1>
+
+<script>
+function myQuestion() {
+var myQ1 = Math.floor(Math.random() * 9)+1;
+// if (myQ == 0) {myQ = 1};
+document.getElementById("demo1").innerHTML = myQ1;
+var myQ2 = Math.floor(Math.random() * 9)+1;
+// if (myQ == 0) {myQ = 1};
+document.getElementById("demo2").innerHTML = myQ2;
+
+}
+
+function myAnswer() {
+var myQ1 = document.getElementById("demo1").textContent;
+var myQ2 = document.getElementById("demo2").textContent;
+
+var myA = document.getElementById("Ans").value;
+Ans =myQ1 * myQ2;
+
+const Q1 = document.getElementById("Q1");
+
+if (Ans == myA) {
+Q1.innerHTML = "correct";
+Q1.style.color = "green"
+} else {
+Q1.innerHTML = "wrong";
+Q1.style.color = "red"
+}
+myQuestion();
+}
+
+</script>
+
+</body>
+</html>

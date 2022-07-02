@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    background-color: coral;
+}
+#demo1{
+    color: aqua;
+}
+#demo2{
+    color: green;
+}
+#NQ{
+    height: 35px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+#Ans{
+    height: 30px;
+    border-radius: 10px;
+    border-color: red;
+    color: red;
+    font-size: 25px;
+    width: 100px;
+}
+#subBtn{
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
