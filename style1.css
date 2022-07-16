@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+#title{
+    font-size: 50px;
+}
+#demo{
+    font-size: 25px;
+}
+.Btn{
+    font-size: 34px;
+}
+.Btn2{
+    width: 158px;
+    height: 35px;
+}
+#submitBtn{
+    background-color: rgb(255, 255, 77);
+    border: 3px;
+    border-radius: 15px;
+}
